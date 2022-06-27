@@ -9,4 +9,4 @@ class NearInfo:
     def get_near_info(self):
         response = requests.get(self.url_near, headers=self.headers)
         response = response.json()
-        return response['rates']
+        return response
